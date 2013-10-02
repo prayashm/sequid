@@ -1,69 +1,74 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<title>sequID.js</title>
+	<meta name="description" content="sequID.js : Scanning bio sequences." />
+	<link rel="stylesheet" href="styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Sequid : Biological sequence identifier and processor." />
+<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Sequid</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/prayashm/sequid">View on GitHub</a>
-
-          <h1 id="project_title">Sequid</h1>
-          <h2 id="project_tagline">Biological sequence identifier and processor.</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/prayashm/sequid/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/prayashm/sequid/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="sequid" class="anchor" href="#sequid"><span class="octicon octicon-link"></span></a>SequID</h1>
-
-<p>sequID is a basic biological sequence identification and processing application that is user friendly for new people in the field. (<a href="http://prayashm.github.io/sequid/">http://prayashm.github.io/sequid/</a>)</p>
-
-<h2>
-<a name="important-source-files" class="anchor" href="#important-source-files"><span class="octicon octicon-link"></span></a>Important source files</h2>
-
-<p>script.js - Main js entrypoint for application script<br>
-sequID.js - Biological functions used throughout the application<br>
-index.html - HTML entrypoint for sequID<br>
-styles.css - All sequID CSS<br><br>
-jquery.autosize.js - Plugin used for auto resizing of textareas<br>
-jquery.js - Main jQuery library<br></p>
-
-<h2>
-<a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h2>
-
-<p><a href="http://vizify.com/prayash">Prayash Mohapatra</a>
-<a href="http://facebook.com/sthita.pm">Sthita P. Mohanty</a>
-<a href="http://twitter.com/nabaneeta">Ms. Nabaneeta Das</a></p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Sequid maintained by <a href="https://github.com/prayashm">prayashm</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
-</html>
+	</head>
+	<body>
+		<section id="wrapper">
+			<h1>sequID.js</h1>
+			<h2 id="1">Start typing your sequence below.</h2>
+			<div id="main">
+				<input type="text" style="text-transform:uppercase;color:#000000" size="1000" autocomplete="off" placeholder="E.g. ATGCATGCATCGATCGATCGACTGC"></input>
+				<input type="text" value="000" disabled id="charnum"></input>
+			</div>
+			<div id="main2">
+				<h2 id="2">Complementary DNA</h2>
+				<textarea id ="21" style="text-transform:uppercase;color:#000000" autocomplete="off" disabled>Some error occurred</textarea>
+			</div>
+			<div id="main2">
+				<h2 id="2">Corresponding mRNA</h2>
+				<textarea id="22" style="text-transform:uppercase;color:#000000" autocomplete="off" disabled>Some error occurred</textarea>
+			</div>
+			<div id="main2" class="spcl">
+				<h2 id="2">Primers</h2>
+				<form>
+					<textarea id="hg" style="text-transform:uppercase;color:#000000" autocomplete="off" disabled>Some Error Occurred</textarea>
+					<select>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option selected>10</option>
+						<option>11</option>
+						<option>12</option>
+						<option>13</option>
+						<option>14</option>
+						<option>15</option>
+					</select>
+				</form>
+			</div>
+			<div id="main3">
+				<h2 id="2">This mRNA after translation would be <strong>0</strong> amino acids long.</h2>
+				<textarea id="31" style="text-transform:uppercase;color:#000000" autocomplete="off" disabled>Some error occurred</textarea>
+				<p>Bug#1 - Length of geneic sequence needs to be in multiple of 3.</p>
+				<p>Bug#2 - Stuck with results when no stop codon is found.</p>
+			</div>
+			<div id="main4">
+				<h2 id="2">Your protein has <strong>0</strong> amino acids.</h2>
+				<textarea id="41" style="text-transform:uppercase;color:#000000" autocomplete="off" disabled>Some error occurred</textarea>
+			</div>
+			<!--main-->
+			<p>A project for <a href="http://kv1bbsr.org" target="_blank">Kendriya Vidyalaya No.1 (1st Shift) Bhubaneswar</a>.</br>
+				Developed by <a target="_blank" href="http://prayash.tk/">Prayash M</a> and <a target="_blank" href="http://facebook.com/sthita.pm">Sthita M</a>.</br>
+				Special thanks to <a target="_blank" href="http://facebook.com/">Aakash P</a> for identifying bugs</br>
+				In guidance of <a target="_blank" href="http://twitter.com/nabaneetadas">Nabaneeta Das.</a>
+			</p>
+		</section>
+		<!--wrapper-->
+		<!--javascript-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="jquery.js"><\/script>')</script>
+		<script src="jquery.autosize.js"></script>
+		<script src="sequID.js"></script>
+		<script src="script.js"></script>
+	</body>
+	</html>
